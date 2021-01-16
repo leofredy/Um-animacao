@@ -1,0 +1,159 @@
+header {
+    background-image: url('../img/banner.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#filter-background {
+    position: absolute;
+    background-color: var(--filter-color);
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+
+.navigation-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 65px;
+    border-bottom: 1px solid var(--text-color);
+}
+
+.navigation-container a {
+    font-size: 0.9rem;
+}
+
+.navigation-container i {
+    color: var(--main-color);
+    font-size: 1.6rem;
+}
+
+.navigation-container i:hover + nav { 
+    animation-name: horizontalMenu;
+}
+
+.navigation-container nav {
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0px;
+    height: 100vh;
+    background-color: var(--secundary-color);
+
+    animation-duration: 2s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
+}
+
+.navigation-container nav:hover {
+    animation-name: horizontalMenu;
+}
+
+.navigation-container ul {
+    width: 100%;   
+}
+.navigation-container ul li {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    min-height: 30px;
+}
+
+.navigation-container ul li span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    color: var(--main-color);
+}
+
+
+.navigation-container ul li:hover {
+    background-color: var(--hover-list-primary);
+}
+
+.navigation-container ul li:hover > ul {
+    height: 150px;
+}
+
+.navigation-container ul li ul {
+    overflow: hidden;
+    height: 0px;
+    transition: height 3s ease;
+}
+
+.navigation-container ul li ul:hover {
+    display: block;
+}
+
+.navigation-container ul li ul li {
+    height: 30px;
+}
+
+.navigation-container ul li ul li:hover{
+    background-color: var(--hover-list-secundary);
+}
+
+h1 {
+    margin: 50px 0 25px 0;
+    text-align: center;
+}
+
+header .list-banner {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    align-self: center;
+    margin-bottom: 28px;
+}
+
+header .list-banner li {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header .list-banner li:first-child {
+    padding-right: 2.2rem;
+}
+
+header .list-banner li:nth-child(2){
+    padding: 0 2.2rem 0 2.2rem;
+    border-left: 1px solid var(--text-color);
+    border-right: 1px solid var(--text-color);
+}
+
+header .list-banner li:last-child {
+    padding-left: 2.2rem;
+}
+
+
+.list-banner li i.fa {
+    font-size: 1.8rem;
+}
+
+header button {
+    align-self: center;
+    width: 110px;
+    height: 25px;
+    font-weight: 300;
+    font-size: 0.8rem;
+    background-color: transparent;
+    color: var(--secundary-color);
+    border-radius: 30px;
+    border: 2px solid var(--secundary-color);
+    outline-style: none;
+    cursor: pointer;
+    margin-bottom: 42px;
+}
