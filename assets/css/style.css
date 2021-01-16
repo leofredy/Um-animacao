@@ -24,17 +24,17 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 65px;
-    border-bottom: 1px solid var(--text-color);
+    height: 112px;
+    border-bottom: 2px solid #fff3;
 }
 
-.navigation-container a {
-    font-size: 0.9rem;
+.navigation-container figure a {
+    font-size: 1.6rem;
 }
 
 .navigation-container i {
     color: var(--main-color);
-    font-size: 1.6rem;
+    font-size: 1.8rem;
 }
 
 .navigation-container i:hover + nav { 
@@ -50,7 +50,7 @@ header {
     height: 100vh;
     background-color: var(--secundary-color);
 
-    animation-duration: 2s;
+    animation-duration: 0.5s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
 }
@@ -59,8 +59,13 @@ header {
     animation-name: horizontalMenu;
 }
 
-.navigation-container ul {
-    width: 100%;   
+nav ul{
+    width: 100%;  
+}
+
+nav > ul {
+     
+    margin-top: 40px;
 }
 .navigation-container ul li {
     display: flex;
@@ -90,7 +95,7 @@ header {
 .navigation-container ul li ul {
     overflow: hidden;
     height: 0px;
-    transition: height 3s ease;
+    transition: height 0.8s ease;
 }
 
 .navigation-container ul li ul:hover {
@@ -105,16 +110,11 @@ header {
     background-color: var(--hover-list-secundary);
 }
 
-h1 {
-    margin: 50px 0 25px 0;
-    text-align: center;
-}
-
 header .list-banner {
     display: grid;
     grid-template-columns: auto auto auto;
     align-self: center;
-    margin-bottom: 28px;
+    margin-bottom: 6.4rem;
 }
 
 header .list-banner li {
@@ -125,35 +125,39 @@ header .list-banner li {
 }
 
 header .list-banner li:first-child {
-    padding-right: 2.2rem;
+    padding-right: 4.8rem;
 }
 
 header .list-banner li:nth-child(2){
-    padding: 0 2.2rem 0 2.2rem;
+    padding: 0 4.8rem 0 4.8rem;
     border-left: 1px solid var(--text-color);
     border-right: 1px solid var(--text-color);
 }
 
 header .list-banner li:last-child {
-    padding-left: 2.2rem;
+    padding-left: 4.8rem;
+}
+
+header .list-banner li i {
+    margin-bottom: 15.5px;
 }
 
 
 .list-banner li i.fa {
-    font-size: 1.8rem;
+    font-size: 3.2rem;
 }
 
 header button {
     align-self: center;
-    width: 110px;
-    height: 25px;
+    width: 186px;
+    height: 45px;
     font-weight: 300;
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     background-color: transparent;
     color: var(--secundary-color);
     border-radius: 30px;
     border: 2px solid var(--secundary-color);
     outline-style: none;
     cursor: pointer;
-    margin-bottom: 42px;
+    margin-bottom: 9.6rem;
 }
