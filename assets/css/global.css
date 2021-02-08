@@ -95,6 +95,7 @@ input:focus, textarea:focus {
 
 .container {
     width: 90%;
+    max-width: 1400px;
     z-index: 99;
     display: flex;
     flex-direction: column;
